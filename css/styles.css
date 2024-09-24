@@ -1,0 +1,48 @@
+.content {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.weather {
+    text-align: center;
+}
+
+.small-widget {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.small-widget .weather-img {
+    margin-right: 10px;
+}
+
+.large-widget .weather-img {
+    width: 50px;
+    height: auto;
+}
+
+.temperature {
+    font-size: 2em;
+}
+
+.location {
+    font-size: 1.5em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
