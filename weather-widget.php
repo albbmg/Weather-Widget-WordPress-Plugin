@@ -37,6 +37,7 @@ function weather_widget_shortcode() {
 }
 add_shortcode('weather_widget', 'weather_widget_shortcode');
 
+// Cargar los scripts y estilos
 function weather_widget_scripts() {
     wp_enqueue_script('weather-widget-js', plugin_dir_url(__FILE__) . 'js/weather-widget.js', array('jquery'), null, true);
 }
@@ -46,4 +47,11 @@ function weather_widget_styles() {
     wp_enqueue_style('weather-widget-css', plugin_dir_url(__FILE__) . 'css/styles.css');
 }
 add_action('wp_enqueue_scripts', 'weather_widget_styles');
+
+// Registrar el widget en Elementor
+function register_weather_widget_elementor($widgets_manager) {
+    require_once(__DIR__ . '/widgets/weather-widget-elementor.php');
+    $widgets_manager->register(new \Elementor_Weather_Widget());
+}
+add_action('elementor/widgets/register', 'register_weather_widget_elementor');
 ?>
