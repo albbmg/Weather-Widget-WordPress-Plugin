@@ -57,7 +57,7 @@ This plugin uses the OpenWeatherMap API to retrieve real-time weather data. Ensu
 This project is licensed under the MIT License.
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-repo/issues](https://github.com/albbmg/Weather-Widget-WordPress-Plugin/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page: (https://github.com/your-repo/issues](https://github.com/albbmg/Weather-Widget-WordPress-Plugin/issues).
 
 ---
 
